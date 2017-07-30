@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/poi_hs" />
+
+    <LinearLayout
+        android:id="@+id/vert_rightside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_text"
+                style="@style/name_text"
+                tools:text="Heroes Square" />
+
+            <ImageView
+                android:id="@+id/ic_call"
+                style="@style/small_icons"
+                android:src="@drawable/ic_call_black_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_web"
+                style="@style/small_icons"
+                android:src="@drawable/ic_public_black_24dp" />
+
+            <ImageView
+                android:id="@+id/ic_map"
+                style="@style/small_icons"
+                android:src="@drawable/ic_map_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/desc_text"
+            style="@style/desc_text"
+            tools:text="Nice Square commemorating kings, surrounded by galleries." />
+    </LinearLayout>
+</LinearLayout>

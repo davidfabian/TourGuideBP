@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TourGuideBP</string>
+    <string name="category_poi">Points Of Interest</string>
+    <string name="category_restaurants">Restaurants</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_phrases">Useful Phrases</string>
+</resources>
