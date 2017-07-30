@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PoiActivity"
+            android:label="@string/category_poi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RestaurantActivity"
+            android:label="@string/category_restaurants"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TransportActivity"
+            android:label="@string/category_transport"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
