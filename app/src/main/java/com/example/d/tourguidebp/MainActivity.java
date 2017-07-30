@@ -38,32 +38,32 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the POI View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, PoiActivity.class);
-                startActivity(numbersIntent);
+                Intent poiIntent = new Intent(MainActivity.this, PoiActivity.class);
+                startActivity(poiIntent);
             }
         });
 
         // Find the View that shows the restaurants category
-        TextView family = (TextView) findViewById(R.id.restaurants);
+        TextView restaurant = (TextView) findViewById(R.id.restaurants);
         // Set a click listener for restaurants view
-        family.setOnClickListener(new View.OnClickListener() {
+        restaurant.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the restaurants View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent familyIntent = new Intent(MainActivity.this, RestaurantActivity.class);
-                startActivity(familyIntent);
+                Intent restaurantIntent = new Intent(MainActivity.this, RestaurantActivity.class);
+                startActivity(restaurantIntent);
             }
         });
 
         // Find the View that shows the transport category
-        TextView colors = (TextView) findViewById(R.id.transport);
+        TextView transport = (TextView) findViewById(R.id.transport);
         // Set a click listener for colors view
-        colors.setOnClickListener(new View.OnClickListener() {
+        transport.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the transport View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent colorsIntent = new Intent(MainActivity.this, TransportActivity.class);
-                startActivity(colorsIntent);
+                Intent transportIntent = new Intent(MainActivity.this, TransportActivity.class);
+                startActivity(transportIntent);
             }
         });
 

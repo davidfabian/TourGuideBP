@@ -12,10 +12,10 @@ public class TouristItem {
     private int mIconimage = NO_IMAGE;
     private String mName;
     private String mDescription;
-    private double mLongitude;
+    private double mLongitude = -1.0;
     private double mLatitude;
-    private String mPhoneNo;
-    private String mWebAddress;
+    private String mPhoneNo = null;
+    private String mWebAddress = null;
 
     //Constructor for object for Point Of Interest
     public TouristItem(int img, String name, String desc, double lon, double lat) {
@@ -47,8 +47,7 @@ public class TouristItem {
     }
 
     //Constructor for object for Hungarian Phrase
-    public TouristItem(int img, String name, String desc) {
-        mIconimage = img;
+    public TouristItem(String name, String desc) {
         mName = name;
         mDescription = desc;
     }
@@ -121,5 +120,17 @@ public class TouristItem {
      */
     public boolean hasImage() {
         return mIconimage != NO_IMAGE;
+    }
+
+    public boolean hasMapInfo() {
+        return mLongitude != NO_IMAGE;
+    }
+
+    public boolean hasPhone() {
+        return mPhoneNo != null;
+    }
+
+    public boolean hasWww() {
+        return mWebAddress != null;
     }
 }

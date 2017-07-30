@@ -2,6 +2,7 @@ package com.example.d.tourguidebp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -16,11 +17,20 @@ public class TransportActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tourist_list);
 
+        //populating the transport list
         final ArrayList<TouristItem> destinations = new ArrayList<TouristItem>() {
             {
-                add(new TouristItem(R.drawable.poi_gb, "Tomb of Gul Baba", "Old Ottoman tomb with a rosegarden.", 47.5160017, 19.033817));
-                add(new TouristItem(R.drawable.poi_ss, "Saint Stephen Basilica", "Biggest church in Hungary, tallest dome in the country.", 47.500828, 19.053952));
+                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
+                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
+                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
             }
         };
+
+        //setting up a touristadapter to connect this transport list with the listview.
+        TouristAdapter touristAdapter = new TouristAdapter(this, destinations, R.color.category_transport);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(touristAdapter);
+
     }
 }
