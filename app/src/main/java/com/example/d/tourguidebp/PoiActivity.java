@@ -32,5 +32,7 @@ public class PoiActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(touristAdapter);
 
+        //setting up listeners for icon clicks.
+
     }
 }
