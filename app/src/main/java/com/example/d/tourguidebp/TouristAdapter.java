@@ -72,7 +72,7 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         //Checks for available map information, inflating map icon only if info available
         ImageView mapIcon = (ImageView) listItemView.findViewById(R.id.ic_map);
         if (currentItem.hasMapInfo()) {
-            mapIcon.setImageResource(R.drawable.ic_map_black_24dp);
+            mapIcon.setImageResource(R.drawable.ic_map_white_24dp);
             mapIcon.setVisibility(View.VISIBLE);
         } else {
             mapIcon.setVisibility(View.GONE);
@@ -81,7 +81,7 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         //Checks for available phone number, inflating phone icon only if phone number is provided
         ImageView phoneIcon = (ImageView) listItemView.findViewById(R.id.ic_call);
         if (currentItem.hasPhone()) {
-            phoneIcon.setImageResource(R.drawable.ic_call_black_24dp);
+            phoneIcon.setImageResource(R.drawable.ic_call_white_24dp);
             phoneIcon.setVisibility(View.VISIBLE);
         } else {
             phoneIcon.setVisibility(View.GONE);
@@ -90,7 +90,7 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         //Checks for available web address, inflating web icon only if web address provided
         ImageView wwwIcon = (ImageView) listItemView.findViewById(R.id.ic_web);
         if (currentItem.hasWww()) {
-            wwwIcon.setImageResource(R.drawable.ic_public_black_24dp);
+            wwwIcon.setImageResource(R.drawable.ic_public_white_24dp);
             wwwIcon.setVisibility(View.VISIBLE);
         } else {
             wwwIcon.setVisibility(View.GONE);
