@@ -12,27 +12,24 @@ public class TouristItem {
     private int mIconimage = NO_IMAGE;
     private String mName;
     private String mDescription;
-    private double mLongitude = -1.0;
-    private double mLatitude;
+    private String mLocation = null;
     private String mPhoneNo = null;
     private String mWebAddress = null;
 
     //Constructor for object for Point Of Interest
-    public TouristItem(int img, String name, String desc, double lon, double lat) {
+    public TouristItem(int img, String name, String desc, String loc) {
         mIconimage = img;
         mName = name;
         mDescription = desc;
-        mLongitude = lon;
-        mLatitude = lat;
+        mLocation = loc;
     }
 
     //Constructor for object for Restaurant
-    public TouristItem(int img, String name, String desc, double lon, double lat, String phone, String www) {
+    public TouristItem(int img, String name, String desc, String loc, String phone, String www) {
         mIconimage = img;
         mName = name;
         mDescription = desc;
-        mLongitude = lon;
-        mLatitude = lat;
+        mLocation = loc;
         mPhoneNo = phone;
         mWebAddress = www;
     }
@@ -79,20 +76,13 @@ public class TouristItem {
         return mDescription;
     }
 
-    private Location createNewLocation(double longitude, double latitude) {
-        Location location = new Location("dummyprovider");
-        location.setLongitude(longitude);
-        location.setLatitude(latitude);
-        return location;
-    }
-
     /**
      * getter method for location
      *
-     * @return location variable
+     * @return location String variable
      */
-    public Location getMyLoc() {
-        return createNewLocation(mLongitude, mLatitude);
+    public String getmLocation() {
+        return mLocation;
     }
 
     /**
@@ -123,7 +113,7 @@ public class TouristItem {
     }
 
     public boolean hasMapInfo() {
-        return mLongitude != NO_IMAGE;
+        return mLocation != null;
     }
 
     public boolean hasPhone() {

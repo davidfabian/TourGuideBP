@@ -1,6 +1,9 @@
 package com.example.d.tourguidebp;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.location.Location;
+import android.net.Uri;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.util.Log;
@@ -13,8 +16,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import static android.widget.AdapterView.*;
 
 /**
  * Created by d on 7/30/2017.
@@ -56,6 +62,7 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         if (currentItem.hasImage()) {
             image.setImageResource(currentItem.getmIconimage());
             image.setVisibility(View.VISIBLE);
+
         } else {
             image.setVisibility(View.GONE);
         }
@@ -76,6 +83,23 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         if (currentItem.hasMapInfo()) {
             mapIcon.setImageResource(R.drawable.ic_map_white_24dp);
             mapIcon.setVisibility(View.VISIBLE);
+            //make icon clickable
+            mapIcon.setClickable(true);
+            //set up onclicklistener
+            mapIcon.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //get current items location
+                    String mapExtra = currentItem.getmLocation();
+                    Log.i("klikk", "location!" + mapExtra.toString());
+
+                    Uri gmmIntentUri = Uri.parse(mapExtra.toString());
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    getContext().startActivity(mapIntent);
+
+                }
+            });
         } else {
             mapIcon.setVisibility(View.GONE);
         }
@@ -85,6 +109,21 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         if (currentItem.hasPhone()) {
             phoneIcon.setImageResource(R.drawable.ic_call_white_24dp);
             phoneIcon.setVisibility(View.VISIBLE);
+            //make icon clickable
+            phoneIcon.setClickable(true);
+            //set up onclicklistener
+            phoneIcon.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //get current items location
+                    String phoneExtra = currentItem.getmPhoneNo();
+                    Log.i("klikk", "phone!" + phoneExtra);
+                    Uri gmmIntentUri = Uri.parse("tel:" + phoneExtra);
+                    Intent callIntent = new Intent(Intent.ACTION_DIAL, gmmIntentUri);
+                    getContext().startActivity(callIntent);
+
+                }
+            });
         } else {
             phoneIcon.setVisibility(View.GONE);
         }
@@ -94,6 +133,21 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
         if (currentItem.hasWww()) {
             wwwIcon.setImageResource(R.drawable.ic_public_white_24dp);
             wwwIcon.setVisibility(View.VISIBLE);
+            //make icon clickable
+            wwwIcon.setClickable(true);
+            //set up onclicklistener
+            wwwIcon.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //get current items location
+                    String wwwExtra = currentItem.getmWebAddress();
+                    Log.i("klikk", "web!" + wwwExtra);
+                    Uri gmmIntentUri = Uri.parse(wwwExtra);
+                    Intent webIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    getContext().startActivity(webIntent);
+
+                }
+            });
         } else {
             wwwIcon.setVisibility(View.GONE);
         }
