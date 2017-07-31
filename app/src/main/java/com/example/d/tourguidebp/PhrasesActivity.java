@@ -20,9 +20,23 @@ public class PhrasesActivity extends AppCompatActivity {
         //populating the phrases list
         final ArrayList<TouristItem> destinations = new ArrayList<TouristItem>() {
             {
-                add(new TouristItem("good morning", "Jo reggelt"));
-                add(new TouristItem("good afternoon", "Jo napot"));
-                add(new TouristItem("good evening", "Jo estet"));
+                add(new TouristItem("Good morning!", "Jó reggelt!"));
+                add(new TouristItem("Good afternoon!", "Jó napot!"));
+                add(new TouristItem("Good evening!", "Jó estét!"));
+                add(new TouristItem("Good.", "Jó."));
+                add(new TouristItem("Bad.", "Rossz."));
+                add(new TouristItem("Yes.", "Igen."));
+                add(new TouristItem("No.", "Nem."));
+                add(new TouristItem("Thank you.", "Köszönöm."));
+                add(new TouristItem("Thanks'", "Köszi!"));
+                add(new TouristItem("Please.", "Kérem."));
+                add(new TouristItem("Police!", "Rendőr!"));
+                add(new TouristItem("Water!", "Víz"));
+                add(new TouristItem("Help!", "Segítség!"));
+                add(new TouristItem("Take me to....", "... akarok menni."));
+                add(new TouristItem("Very good!", "Nagyon jó!"));
+                add(new TouristItem("Not good.", "Nem jó."));
+
             }
         };
 
