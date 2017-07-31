@@ -20,10 +20,10 @@ public class RestaurantActivity extends AppCompatActivity {
         //populating the restaurant list
         final ArrayList<TouristItem> destinations = new ArrayList<TouristItem>() {
             {
-                add(new TouristItem(R.drawable.res_maz, "Mazi", "Greek restaurant in the heart of downtown", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
-                add(new TouristItem(R.drawable.res_spi, "Spiler", "International casual with Hungarian touch in the party district.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
-                add(new TouristItem(R.drawable.poi_ss, "Saint Stephen Basilica", "Biggest church in Hungary, tallest dome in the country.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
-                add(new TouristItem(R.drawable.poi_ss, "Saint Stephen Basilica", "Biggest church in Hungary, tallest dome in the country.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
+                add(new TouristItem(R.drawable.res_ma, "Mazi", "Greek restaurant in the heart of downtown", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
+                add(new TouristItem(R.drawable.res_sp, "Spiler", "International casual with Hungarian touch in the party district.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
+                add(new TouristItem(R.drawable.res_ba, "Babel", "Michelin Star Restaurant in downtown.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
+                add(new TouristItem(R.drawable.res_la, "Langos", "Greasy, tasty streetfood, tallest dome in the country.", 47.500828, 19.053952, "+36122022021", "www.saintstephensbasilica.hu"));
             }
         };
 

@@ -20,9 +20,10 @@ public class TransportActivity extends AppCompatActivity {
         //populating the transport list
         final ArrayList<TouristItem> destinations = new ArrayList<TouristItem>() {
             {
-                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
-                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
-                add(new TouristItem(R.drawable.poi_hs, "Heroes Square", "Statues around a square between two galleries", "+36123023023", "www.hosoktere.hu"));
+                add(new TouristItem(R.drawable.tra_br, "Bike Rental", "BuBi Bike Sharing operated by the Public Transport Co.", "+3613255255", "https://molbubi.bkk.hu/"));
+                add(new TouristItem(R.drawable.tra_pt, "Public Transport", "BKV the Public Transport Company. Trams, Buses, Metros and more.", "+3613255255", "http://www.bkk.hu/en/timetables/"));
+                add(new TouristItem(R.drawable.tra_wt, "Walking Tours", "Guided walking tours around the city.", "+36203409217", "http://www.triptobudapest.hu/"));
+                add(new TouristItem(R.drawable.tra_ta, "Taxi", "FoTaxi, the biggest and oldest cab company in the city.", "+3612222222", "www.fotaxi.hu"));
             }
         };
 
