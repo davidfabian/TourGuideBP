@@ -1,6 +1,5 @@
 package com.example.d.tourguidebp;
 
-import android.location.Location;
 
 /**
  * Created by d on 7/30/2017.

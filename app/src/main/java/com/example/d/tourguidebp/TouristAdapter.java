@@ -2,27 +2,22 @@ package com.example.d.tourguidebp;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.location.Location;
 import android.net.Uri;
-import android.provider.ContactsContract;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static android.widget.AdapterView.*;
+import static android.widget.AdapterView.OnClickListener;
 
 /**
+ * Adapter class for touristItem class.
  * Created by d on 7/30/2017.
  */
 
@@ -43,8 +38,6 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
 
     }
 
-
-    @NonNull
     @Override
     public View getView(int position, View convertView, final ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
@@ -91,9 +84,9 @@ public class TouristAdapter extends ArrayAdapter<TouristItem> {
                 public void onClick(View v) {
                     //get current items location
                     String mapExtra = currentItem.getmLocation();
-                    Log.i("klikk", "location!" + mapExtra.toString());
+                    Log.i("klikk", "location!" + mapExtra);
 
-                    Uri gmmIntentUri = Uri.parse(mapExtra.toString());
+                    Uri gmmIntentUri = Uri.parse(mapExtra);
                     Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                     mapIntent.setPackage("com.google.android.apps.maps");
                     getContext().startActivity(mapIntent);
