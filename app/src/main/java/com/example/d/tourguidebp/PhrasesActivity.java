@@ -7,6 +7,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
+ * PhrasesActivity. populates phrases list, sets up adapter for listview.
  * Created by d on 7/30/2017.
  */
 

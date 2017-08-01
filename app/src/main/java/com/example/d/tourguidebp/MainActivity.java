@@ -19,7 +19,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the points of interest (POI) category
-        TextView numbers = (TextView) findViewById(R.id.poi);
+        LinearLayout numbers = (LinearLayout) findViewById(R.id.poi);
         // Set a click listener for POI view
         numbers.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the POI View is clicked on.
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the restaurants category
-        TextView restaurant = (TextView) findViewById(R.id.restaurants);
+        LinearLayout restaurant = (LinearLayout) findViewById(R.id.restaurants);
         // Set a click listener for restaurants view
         restaurant.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the restaurants View is clicked on.
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the transport category
-        TextView transport = (TextView) findViewById(R.id.transport);
+        LinearLayout transport = (LinearLayout) findViewById(R.id.transport);
         // Set a click listener for colors view
         transport.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the transport View is clicked on.
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        LinearLayout phrases = (LinearLayout) findViewById(R.id.phrases);
         // Set a click listener for phrases view
         phrases.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the phrases View is clicked on.

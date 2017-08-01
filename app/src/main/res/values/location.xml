@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gul_baba_map">https://www.google.com/maps/search/?api=1&amp;query=Gül Baba Türbe és Rózsakert Budapest, Budapest, Mecset Street, Hungary</string>
+    <string name="heroes_square_map">https://www.google.com/maps/search/?api=1&amp;query=Heroes\' Square, Budapest, Hősök tere, Hungary</string>
+    <string name="st_stephens_map">https://www.google.com/maps/search/?api=1&amp;query=St. Stephen\'s Basilica, Budapest, Hungary</string>
+    <string name="buda_castle_map">https://www.google.com/maps/search/?api=1&amp;query=Buda Castle, Budapest, Szent György tér, Hungary</string>
+    <string name="szechenyi_baths_map">https://www.google.com/maps/search/?api=1&amp;query=Széchenyi Thermal Bath, Budapest, Állatkerti körút, Hungary</string>
+
+    <string name="mazi_map">https://www.google.com/maps/search/?api=1&amp;query=Mazi Greek Kitchen, Budapest, Alkotmány Street, Hungary</string>
+    <string name="spiler_map">https://www.google.com/maps/search/?api=1&amp;query=Spíler BistroPub, Budapest, Király Street, Hungary</string>
+    <string name="babel_map">https://www.google.com/maps/search/?api=1&amp;query=Babel Budapest Restaurant, Budapest, Piarista köz, Hungary</string>
+    <string name="langos_map">https://www.google.com/maps/search/?api=1&amp;query=Langos Food Stall, Budapest, Hungary</string>
+    <string name="menza_map">https://www.google.com/maps/search/?api=1&amp;query=Menza, Budapest, Liszt Ferenc tér, Hungary</string>
+
+</resources>

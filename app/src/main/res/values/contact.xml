@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mazi_ph">+3617945853</string>
+    <string name="spiler_ph">+3618781320</string>
+    <string name="babel_ph">+36706000800</string>
+    <string name="langos_ph">+3613663300</string>
+    <string name="menza_ph">+3614131482</string>
+
+    <string name="biker_rental_ph">+3613255255</string>
+    <string name="public_transport_ph">+3613255255</string>
+    <string name="walking_tours_ph">+36203409217</string>
+    <string name="taxi_ph">+3612222222</string>
+
+    <string name="mazi_www">https://www.facebook.com/mazigreekkitchen/</string>
+    <string name="spiler_www">http://spilerbp.hu/spiler/en</string>
+    <string name="babel_www">http://babel-budapest.hu/</string>
+    <string name="langos_www">https://www.google.com/maps/search/?api=1&amp;query=budapest+langos</string>
+    <string name="menza_www">http://www.menzaetterem.hu/english.php</string>
+
+    <string name="biker_rental_www">https://molbubi.bkk.hu/</string>
+    <string name="public_transport_www">http://www.bkk.hu/en/timetables/</string>
+    <string name="walking_tours_www">http://www.triptobudapest.hu/</string>
+    <string name="taxi_www">http://fotaxi.hu/?lang=en</string>
+</resources>
