@@ -40,14 +40,14 @@
     <string name="bad">Bad.</string>
     <string name="yes">Yes.</string>
     <string name="no">No.</string>
-    <string name="tank_you">Thank you.</string>
+    <string name="thank_you">Thank you.</string>
     <string name="thanks">Thanks</string>
     <string name="please">Please.</string>
     <string name="police">Police!</string>
     <string name="water">Water</string>
     <string name="help">Help!</string>
     <string name="take_me_to">Take me to....</string>
-    <string name="vary_good">Very good!</string>
+    <string name="very_good">Very good!</string>
     <string name="not_good">Not good.</string>
     <string name="good_morning_hu">Jó reggelt!</string>
     <string name="good_afternoon_hu">Jó napot!</string>
@@ -56,13 +56,13 @@
     <string name="bad_hu">Rossz.</string>
     <string name="yes_hu">Igen.</string>
     <string name="no_hu">Nem.</string>
-    <string name="tank_you_hu">Köszönöm.</string>
+    <string name="thank_you_hu">Köszönöm.</string>
     <string name="thanks_hu">Köszi.</string>
     <string name="please_hu">Kérem.</string>
     <string name="police_hu">Rendőr!</string>
     <string name="water_hu">Víz</string>
     <string name="help_hu">Segítség!</string>
     <string name="take_me_to_hu">... akarok menni.</string>
-    <string name="vary_good_hu">Nagyon jó!</string>
+    <string name="very_good_hu">Nagyon jó!</string>
     <string name="not_good_hu">Nem jó.</string>
 </resources>
